@@ -395,6 +395,148 @@ h2.page-title {
     margin-bottom: 24px;
 }
 
+/* ---------- Service sections ---------- */
+.service-section {
+    border-top: 1px solid var(--divider);
+    padding-top: 48px;
+}
+
+.service-section-title {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: clamp(26px, 3vw, 32px);
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--text-deep);
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+.service-list {
+    list-style: none;
+    margin: 0.5em 0 1.4em;
+    padding-left: 0;
+}
+
+.service-list li {
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 0.45em;
+    font-size: 19px;
+    line-height: 1.55;
+    color: var(--body);
+}
+
+.service-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.7em;
+    width: 14px;
+    height: 2px;
+    background: var(--gold);
+}
+
+.service-cta {
+    margin-top: 1.6em !important;
+}
+
+/* ---------- Contact form ---------- */
+.contact-form {
+    margin-top: 36px;
+    max-width: 580px;
+}
+
+.honeypot {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.field {
+    margin-bottom: 22px;
+}
+
+.field label {
+    display: block;
+    font-family: var(--sans);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
+.field .optional {
+    margin-left: 4px;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    text-transform: none;
+    color: var(--faded);
+}
+
+.field input,
+.field textarea {
+    width: 100%;
+    font-family: var(--serif);
+    font-size: 17px;
+    line-height: 1.5;
+    color: var(--text-deep);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 12px 14px;
+    appearance: none;
+    -webkit-appearance: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.field textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.field input:focus,
+.field textarea:focus {
+    outline: none;
+    border-color: var(--teal);
+    background: var(--bg);
+    box-shadow: 0 0 0 3px rgba(0, 119, 119, 0.18);
+}
+
+.contact-form button.cta {
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    margin-top: 8px;
+}
+
+.contact-fallback {
+    margin-top: 36px;
+    padding-top: 24px;
+    border-top: 1px solid var(--divider);
+    font-size: 16px;
+    color: var(--text-muted);
+}
+
+.contact-fallback a {
+    border-bottom: 1px solid var(--gold);
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.contact-fallback a:hover {
+    color: var(--gold-burnished);
+    border-bottom-color: var(--gold-burnished);
+}
+
+.thanks-back {
+    margin-top: 2em;
+}
+
 /* ---------- Footer ---------- */
 .site-foot {
     padding: 32px 0;

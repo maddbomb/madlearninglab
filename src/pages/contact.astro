@@ -1,16 +1,55 @@
 ---
 import Base from '../layouts/Base.astro';
 ---
-<Base title="Contact — Mad Learning Lab">
+<Base title="Contact — Mad Learning Lab" description="Get in touch with Mad Learning Lab about research, evaluation, or capacity-building work for your organization.">
   <section class="page">
     <p class="page-eyebrow">Contact</p>
     <h2 class="page-title">Let's talk.</h2>
     <p>
-      Reach out at <a href="mailto:madeleineesmith90@gmail.com">madeleineesmith90@gmail.com</a> to
-      start a conversation about your research, evaluation, or capacity-building needs.
+      Tell us a little about your organization and what you're working on. We respond to every
+      inquiry within a couple of business days.
     </p>
-    <div class="page-note">
-      A proper contact form is coming soon. For now, email is the fastest way to reach us.
-    </div>
+
+    <form
+      class="contact-form"
+      action="https://formsubmit.co/madlearninglab@gmail.com"
+      method="POST"
+    >
+      <input type="hidden" name="_subject" value="New inquiry from madlearninglab.com" />
+      <input type="hidden" name="_template" value="box" />
+      <input type="hidden" name="_next" value="https://madlearninglab.com/thanks" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" />
+
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required autocomplete="name" />
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email" />
+      </div>
+
+      <div class="field">
+        <label for="organization">Organization <span class="optional">(optional)</span></label>
+        <input type="text" id="organization" name="organization" autocomplete="organization" />
+      </div>
+
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+      </div>
+
+      <button type="submit" class="cta">
+        Send message
+        <span class="cta-arrow" aria-hidden="true">→</span>
+      </button>
+    </form>
+
+    <p class="contact-fallback">
+      Prefer email? Reach us directly at
+      <a href="mailto:madlearninglab@gmail.com">madlearninglab@gmail.com</a>.
+    </p>
   </section>
 </Base>
