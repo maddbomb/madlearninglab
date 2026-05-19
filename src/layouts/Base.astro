@@ -10,16 +10,19 @@ const path = Astro.url.pathname.replace(/\/$/, '') || '/';
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <title>{title}</title>
+    <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <header class="container site-head">
-      <a href="/" class="brand">Mad <span class="brand-mark">Learning</span> Lab</a>
+      <a href="/" class="brand" aria-label="Mad Learning Lab — home">
+        <img src="/brand/logo.png" alt="Mad Learning Lab" />
+      </a>
       <nav>
         <ul class="nav">
           <li><a href="/" aria-current={path === '/' ? 'page' : undefined}>Home</a></li>
