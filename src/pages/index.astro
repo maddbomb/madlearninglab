@@ -1,17 +1,21 @@
 ---
-
+import Base from '../layouts/Base.astro';
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Base title="Mad Learning Lab — Research, evaluation, and capacity-building consulting">
+  <section class="hero">
+    <span class="eyebrow">Mad Learning Lab</span>
+    <h1 class="hero-headline">We bridge the research-to-practice gap, turning insights into <em>feasible action</em>.</h1>
+    <p class="hero-body">
+      At Mad Learning Lab, we create custom research, evaluation, planning, and skill-building
+      solutions that fit your organization's specific needs and challenges. We work in two ways:
+      providing high-quality evaluation services and building lasting skills in your team. This helps
+      organizations that have complex measurement needs but limited resources. Our approach not only
+      gives you the evaluation services you need right now but also teaches your program managers
+      practical skills to measure your long-term impact.
+    </p>
+    <a href="/contact" class="cta">
+      Get in touch
+      <span class="cta-arrow" aria-hidden="true">→</span>
+    </a>
+  </section>
+</Base>
