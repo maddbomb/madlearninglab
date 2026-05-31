@@ -6,7 +6,7 @@ import Base from '../layouts/Base.astro';
     <p class="page-eyebrow">Contact</p>
     <h2 class="page-title">Let's talk.</h2>
     <p>
-      Tell us a little about your organization and what you're working on. We respond to every
+      Tell me a little about your organization and what you're working on. I respond to every
       inquiry within a couple of business days.
     </p>
 
@@ -36,6 +36,36 @@ import Base from '../layouts/Base.astro';
         <input type="text" id="organization" name="organization" autocomplete="organization" />
       </div>
 
+      <fieldset class="budget-field">
+        <legend>What is your budget range?</legend>
+        <div class="radio-list">
+          <label class="radio-option">
+            <input type="radio" name="budget" value="$1,000–5,999" />
+            <span>$1,000–5,999</span>
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="budget" value="$6,000–18,999" />
+            <span>$6,000–18,999</span>
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="budget" value="$19,000–29,999" />
+            <span>$19,000–29,999</span>
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="budget" value="$30,000–79,999" />
+            <span>$30,000–79,999</span>
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="budget" value="$80,000+" />
+            <span>$80,000+</span>
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="budget" value="I don't have a set budget" />
+            <span>I don't have a set budget</span>
+          </label>
+        </div>
+      </fieldset>
+
       <div class="field">
         <label for="message">Message</label>
         <textarea id="message" name="message" rows="6" required></textarea>
@@ -48,7 +78,7 @@ import Base from '../layouts/Base.astro';
     </form>
 
     <p class="contact-fallback">
-      Prefer email? Reach us directly at
+      Prefer email? Reach me directly at
       <a href="mailto:madlearninglab@gmail.com">madlearninglab@gmail.com</a>.
     </p>
   </section>
